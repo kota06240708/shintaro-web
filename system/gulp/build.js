@@ -9,7 +9,7 @@ gulp.task('build', () => {
     .pipe(gulp.dest(process.env.NODE_ENV));
 
   gulp
-    .src(`./${conf.src}/font/**`)
+    .src(`./${conf.src}/fonts/**`)
     .pipe(gulp.dest(`${process.env.NODE_ENV}/fonts`));
 
   gulp.run('js:prod');
