@@ -4,19 +4,19 @@
     "menu": [
       {
         "name": "about",
-        "link": "/about"
+        "link": "./about"
       },
       {
         "name": "work",
-        "link": "/work"
+        "link": "./work"
       },
       {
         "name": "artist",
-        "link": "/artist"
+        "link": "./artist"
       },
       {
         "name": "contact",
-        "link": "/contact"
+        "link": "./contact"
       }
     ]
   }
