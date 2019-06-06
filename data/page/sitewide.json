@@ -1,0 +1,23 @@
+{
+  "siteWide": {
+    "title": "avant_garde",
+    "menu": [
+      {
+        "name": "about",
+        "link": "/about"
+      },
+      {
+        "name": "work",
+        "link": "/work"
+      },
+      {
+        "name": "artist",
+        "link": "/artist"
+      },
+      {
+        "name": "contact",
+        "link": "/contact"
+      }
+    ]
+  }
+}

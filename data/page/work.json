@@ -1,0 +1,51 @@
+{
+  "work": {
+    "contents": [
+      {
+        "title": "r&d",
+        "people": [
+          {
+            "role": "edit",
+            "name": "shintaro"
+          },
+          {
+            "role": "sound",
+            "name": "yahyel"
+          }
+        ],
+        "skill": ["js", "unity"],
+        "image": "/image/sample01.jpg"
+      },
+      {
+        "title": "hovers",
+        "people": [
+          {
+            "role": "edit",
+            "name": "shintaro"
+          },
+          {
+            "role": "sound",
+            "name": "yahyel"
+          }
+        ],
+        "skill": ["js", "unity", "object-c", "swift", "css", "C++"],
+        "image": "/image/sample02.jpg"
+      },
+      {
+        "title": "NBA",
+        "people": [
+          {
+            "role": "edit",
+            "name": "shintaro"
+          },
+          {
+            "role": "sound",
+            "name": "yahyel"
+          }
+        ],
+        "skill": ["swift"],
+        "image": "/image/sample01.jpg"
+      }
+    ]
+  }
+}

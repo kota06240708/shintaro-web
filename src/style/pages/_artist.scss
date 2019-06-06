@@ -1,0 +1,125 @@
+.artist-contents-wrap {
+  width: 100%;
+}
+
+.artist-contents {
+  max-width: 800px;
+  min-height: calc(50vh - 50px);
+  margin: 0 auto;
+  display: flex;
+  padding: 0 25px 60px;
+
+  .artist-image-wrap {
+    margin-right: 80px;
+  }
+
+  &:last-child {
+    min-height: auto;
+    padding: 0 25px;
+  }
+
+  &:nth-child(even) {
+    flex-flow: row-reverse;
+
+    .artist-image-wrap {
+      margin-left: 80px;
+    }
+  }
+
+  @include tb {
+    .artist-image-wrap {
+      margin-right: 25px;
+    }
+  }
+
+  @include sp {
+    display: block;
+    margin-bottom: 80px;
+
+    &:nth-child(even) {
+      .artist-image-wrap {
+        margin-left: 0;
+      }
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.artist-image-wrap {
+  width: calc(40% + 80px);
+  @include tb {
+    width: calc(40% + 25px);
+  }
+
+  @include sp {
+    width: 100%;
+    margin: 0 0 40px;
+  }
+}
+
+.artist-image {
+  width: 100%;
+  max-width: 300px;
+  display: block;
+
+  @include sp {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+.artist-introduction {
+  @include font-size(18);
+  width: 60%;
+  text-align: center;
+  color: #fff;
+
+  @include sp {
+    width: 100%;
+  }
+}
+
+.artist-name-wrap {
+  margin-bottom: 10px;
+}
+
+.artist-name {
+  padding-bottom: 5px;
+  font-weight: normal;
+  display: inline;
+  border-bottom: solid 1px #fff;
+}
+
+.artist-type {
+  padding-bottom: 10px;
+}
+
+.artist-skill-list {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+
+.artist-skill-lists {
+  margin-right: 20px;
+  position: relative;
+
+  &::after {
+    content: '/';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -17px;
+  }
+
+  &:last-child {
+    margin-right: 0;
+
+    &::after {
+      content: none;
+    }
+  }
+}

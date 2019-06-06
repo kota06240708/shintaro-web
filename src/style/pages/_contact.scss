@@ -1,0 +1,87 @@
+.contact-inner {
+  width: 100%;
+  padding-top: 80px;
+}
+
+.contact-title {
+  @include font-size(32);
+  text-align: center;
+  font-weight: normal;
+  color: #fff;
+  padding-bottom: calc(50vh - 100px);
+
+  @include sp {
+    padding-bottom: 60px;
+  }
+}
+
+.contact-link {
+  @include hover;
+  color: #fff;
+  text-decoration: none;
+  display: block;
+}
+
+.contact-sns-title-wrap {
+  display: none;
+
+  @include tb {
+    display: block;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  @include sp {
+    display: block;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+}
+
+.contact-sns-title {
+  @include font-size(38);
+  display: inline;
+  color: #fff;
+  font-weight: normal;
+  text-align: center;
+  padding-bottom: 5px;
+  border-bottom: solid 1px #fff;
+}
+
+.contact-sns-list {
+  display: flex;
+  justify-content: center;
+
+  @include tb {
+    flex-wrap: wrap;
+    justify-content: start;
+    padding: 0 25px;
+  }
+
+  @include sp {
+    display: block;
+    text-align: center;
+  }
+}
+
+.contact-sns-lists {
+  @include font-size(24);
+  margin-right: 80px;
+
+  &:last-child {
+    margin: 0;
+  }
+
+  @include tb {
+    width: 50%;
+    margin-right: 0;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  @include sp {
+    width: 100%;
+    margin-bottom: 40px;
+    margin-right: 0;
+  }
+}

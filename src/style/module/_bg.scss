@@ -1,0 +1,19 @@
+.bg {
+  @include font-size(24);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  color: #fff;
+  height: calc(100vh - 183px);
+  z-index: -1;
+  white-space: pre;
+  text-align: center;
+  opacity: 0.3;
+  line-height: 2;
+
+  @include sp {
+    word-break: break-all;
+    white-space: normal;
+  }
+}

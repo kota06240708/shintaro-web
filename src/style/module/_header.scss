@@ -1,0 +1,53 @@
+.header {
+  width: 100%;
+}
+
+.header-inner {
+  padding: 30px 0;
+}
+
+.header-title {
+  @include font-size(42);
+  text-align: center;
+  color: #fff;
+  font-weight: normal;
+  margin-bottom: 32px;
+  cursor: pointer;
+}
+
+.header-menu {
+  height: 40px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.header-menu-inner {
+  height: calc(100% + 100px);
+  display: flex;
+  justify-content: center;
+
+  @include sp {
+    justify-content: start;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+.header-menus {
+  @include font-size(24);
+  padding: 0 50px;
+
+  @include tb {
+    padding: 0 20px;
+  }
+
+  @include sp {
+    padding: 0 20px;
+  }
+}
+
+.header-link {
+  @include hover();
+  color: #fff;
+  text-decoration: none;
+}

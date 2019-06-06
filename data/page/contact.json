@@ -1,0 +1,27 @@
+{
+  "contact": {
+    "mail": "shin.hyp@gmail.com",
+    "sns": [
+      {
+        "name":"youtube",
+        "link": "#"
+      },
+      {
+        "name":"facebook",
+        "link": "#"
+      },
+      {
+        "name":"instagram",
+        "link": "#"
+      },
+      {
+        "name":"twitter",
+        "link": "#"
+      },
+      {
+        "name":"github",
+        "link": "#"
+      }
+    ]
+  }
+}

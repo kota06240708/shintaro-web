@@ -1,0 +1,60 @@
+@import '../shared/styles/import';
+
+/* module */
+@import './module/header';
+@import './module/bg';
+@import './module/swiper';
+
+/* page */
+@import './pages/top';
+@import './pages/work';
+@import './pages/artist';
+@import './pages/contact';
+
+.body {
+  background-color: #000;
+  min-width: 310px;
+}
+
+.title-wrap {
+  width: 100%;
+  height: calc(100vh - 140px);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.title-position-wrap {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  @include sp {
+    display: none;
+  }
+}
+
+.title-position-inner {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.title-inner {
+  width: 100%;
+  text-align: center;
+}
+
+.title {
+  @include font-size(42);
+  font-weight: normal;
+  color: #fff;
+
+  @include tb {
+    @include font-size(28);
+  }
+}

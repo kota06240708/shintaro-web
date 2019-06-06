@@ -1,0 +1,8 @@
+header.header
+  .header-inner
+    h1#js-global-title.header-title #{data.siteWide.title}
+    ul.header-menu
+      .header-menu-inner
+        each item in data.siteWide.menu
+          li.header-menus
+            a.header-link(href=`${item.link}`) #{item.name}

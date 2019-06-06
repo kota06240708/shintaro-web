@@ -1,0 +1,22 @@
+extends ../shared/template/layout/_default
+block main
+  .work
+    .work-inner
+      .swiper-container
+        .swiper-wrapper
+          each item in data.work.contents
+            .swiper-slide
+              .work-contents
+                .work-description
+                  .work-contents-title-wrap
+                    h2.work-contents-title #{item.title}
+                  ul.work-people-list
+                    each peoples in item.people
+                      li.work-people-lists
+                        p.work-people-description.work-people-description_role #{peoples.role}:
+                        p.work-people-description.work-people-description_name #{peoples.name}
+                  ul.work-skill-list
+                    each skills in item.skill
+                      li.work-skill-lists #{skills}
+                .work-img-wrap
+                  .work-img(style=`background-image: url(${item.image})`)

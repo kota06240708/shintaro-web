@@ -1,0 +1,38 @@
+@font-face {
+  font-family: 'Futura Std';
+  src:
+    url('/fonts/Futura-Std-Light.woff') format('woff'),
+    url('/fonts/Futura-Std-Light.otf') format('opentype');
+}
+
+html {
+  font-size: 62.5%;
+  overflow-y: visible;
+}
+
+body {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.4;
+  letter-spacing: 0.15em;
+  position: relative;
+  font-family: 'Futura Std', 'Hiragino Kaku Gothic ProN', 'メイリオ', sans-serif;
+}
+
+::selection {
+  background-color: #ccc !important;
+  color: #000 !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+}
+
+li {
+  list-style: none;
+}
