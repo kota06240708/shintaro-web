@@ -14,7 +14,7 @@
           }
         ],
         "skill": ["js", "unity"],
-        "image": "../image/sample01.jpg"
+        "image": "./image/sample01.jpg"
       },
       {
         "title": "hovers",
@@ -29,7 +29,7 @@
           }
         ],
         "skill": ["js", "unity", "object-c", "swift", "css", "C++"],
-        "image": "../image/sample02.jpg"
+        "image": "./image/sample02.jpg"
       },
       {
         "title": "NBA",
@@ -44,7 +44,7 @@
           }
         ],
         "skill": ["swift"],
-        "image": "../image/sample01.jpg"
+        "image": "./image/sample01.jpg"
       }
     ]
   }
