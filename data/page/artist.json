@@ -11,7 +11,7 @@
               "TouchDesigner"
             ],
             "description": "TouchDesignerを得意とするクリエイター",
-            "image": "/image/sample01.jpg"
+            "image": "../image/sample01.jpg"
           },
           {
             "name": "Hoge",
@@ -22,7 +22,7 @@
               "go"
             ],
             "description": "アプリ、サーバーサイドを熟知しているエンジニア",
-            "image": "/image/sample02.jpg"
+            "image": "../image/sample02.jpg"
           }
         ]
       },
@@ -36,7 +36,7 @@
               "TouchDesigner"
             ],
             "description": "TouchDesignerを得意とするクリエイター",
-            "image": "/image/sample01.jpg"
+            "image": "../image/sample01.jpg"
           },
           {
             "name": "Hoge",
@@ -47,7 +47,7 @@
               "go"
             ],
             "description": "アプリ、サーバーサイドを熟知しているエンジニア",
-            "image": "/image/sample02.jpg"
+            "image": "../image/sample02.jpg"
           }
         ]
       },
@@ -61,7 +61,7 @@
               "TouchDesigner"
             ],
             "description": "TouchDesignerを得意とするクリエイター",
-            "image": "/image/sample01.jpg"
+            "image": "../image/sample01.jpg"
           },
           {
             "name": "Hoge",
@@ -72,7 +72,7 @@
               "go"
             ],
             "description": "アプリ、サーバーサイドを熟知しているエンジニア",
-            "image": "/image/sample02.jpg"
+            "image": "../image/sample02.jpg"
           }
         ]
       }
