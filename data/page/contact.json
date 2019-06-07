@@ -4,23 +4,23 @@
     "sns": [
       {
         "name":"youtube",
-        "link": "#"
+        "link": "https://www.youtube.com/channel/UCznayDnqtIOThLEhO_vMAFg"
       },
       {
         "name":"facebook",
-        "link": "#"
+        "link": "https://www.facebook.com/ono.shintaro?ref=bookmarks"
       },
       {
         "name":"instagram",
-        "link": "#"
+        "link": "https://www.instagram.com/shin_hyp/?hl=ja"
       },
       {
         "name":"twitter",
-        "link": "#"
+        "link": "https://twitter.com/kreisel2011"
       },
       {
         "name":"github",
-        "link": "#"
+        "link": "https://github.com/shintaron"
       }
     ]
   }

@@ -8,7 +8,7 @@
     { "nav": "role" }
   ],
   "disallowLegacyMixinCall" : true,
-  "maximumNumberOfLines": 30,
+  "maximumNumberOfLines": null,
   "requireClassLiteralsBeforeIdLiterals": true,
   "requireIdLiteralsBeforeAttributes": true,
   "requireLineFeedAtFileEnd": true,
