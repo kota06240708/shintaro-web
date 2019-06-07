@@ -4,8 +4,7 @@ const options = {
   loop: true,
   speed: 500,
   allowClick: false,
-  touchRatio: 0.5,
-  paginationClickable: false,
+  simulateTouch: false,
   autoplay: {
     delay: 10000,
     stopOnLastSlide: false,
@@ -27,6 +26,8 @@ const swiperInit = () => {
     swiper.slidePrev();
     return false;
   });
+
+  console.log(swiper);
 
   console.log(swiper);
 
