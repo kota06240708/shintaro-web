@@ -1021,7 +1021,7 @@ video {
   animation: noise-anim-2 0.2s infinite linear alternate-reverse; }
 @font-face {
   font-family: 'Futura Std';
-  src: url("../fonts/Futura-Std-Light.woff") format("woff"), url("../fonts/Futura-Std-Light.otf") format("opentype"); }
+  src: url("/fonts/Futura-Std-Light.woff") format("woff"), url("/fonts/Futura-Std-Light.otf") format("opentype"); }
 html {
   font-size: 62.5%;
   overflow-y: visible; }
@@ -1088,7 +1088,7 @@ li {
   left: 0;
   width: 100%;
   color: #fff;
-  height: calc(100vh - 183px);
+  height: calc(100vh - 50px);
   z-index: -1;
   white-space: pre;
   text-align: center;

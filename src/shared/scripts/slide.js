@@ -4,7 +4,7 @@ const options = {
   loop: true,
   speed: 500,
   autoplay: {
-    delay: 2000,
+    delay: 10000,
     stopOnLastSlide: false,
     disableOnInteraction: false,
     reverseDirection: false

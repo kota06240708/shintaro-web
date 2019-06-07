@@ -17,6 +17,8 @@ const bg = () => {
 
   const typed = new Typed($$bg, params);
 
+  console.log(typed);
+
   return typed;
 };
 

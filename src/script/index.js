@@ -7,6 +7,8 @@ import pjax from '../shared/scripts/pjax';
  * @classdesc - 全ての処理をここで管理
  */
 
+const subTitle = 'weird x avant_garde = beuatiful';
+
 class Index {
   constructor() {
     this.$$typing = document.querySelector('#js-typing');
@@ -14,29 +16,23 @@ class Index {
     this.$$globalTitle = document.querySelector('#js-global-title');
 
     // グローバルのタイピングのアニメーションを格納
-    this.typingGlobal = typing(
-      ['weired x avant_garde = beuatiful'],
-      this.$$typing
-    );
+    this.typingGlobal = typing([subTitle], this.$$typing);
 
     // topのタイトルのタイピングのアニメーションを格納
-    this.typingTop = typing(
-      ['weired x avant_garde = beuatiful'],
-      this.$$topTitle
-    );
+    this.typingTop = typing([subTitle], this.$$topTitle);
 
     this.bgAnimation = bg(); // 背景アニメーションを格納
 
     this.time = -1; // mousemoveのタイム管理
+    this.count = 0; // mousemoveイベントが何回叩かれたかカウント
 
     // bind系
     this.onBgToggleBind = this.onBgToggle.bind(this);
-    this.resetBind = this.resetTitle.bind(this);
+    this.resetBind = this.resetTyping.bind(this);
     this.onRisizeBind = this.onRisize.bind(this);
 
     // ブレイクポイント
     this.breakPoint = 450;
-
     this.breakHeight = 500;
   }
 
@@ -45,8 +41,8 @@ class Index {
     pjax(); // pjaxを発火
     this.typingGlobal; // グローバルのタイピングのアニメーションを発火
     this.typingTop; // topのタイトルのタイピングのアニメーションを発火
-    this.bgAnimation; // 背景のアニメーションを発火
     this.onListerner(); // eventListernerを発火
+    this.bgAnimation.stop();
   }
 
   // eventListernerをここで定義
@@ -96,15 +92,18 @@ class Index {
   }
 
   // グローバルのタイトルをリセット
-  resetTitle() {
+  resetTyping() {
     this.typingGlobal.reset();
+    this.bgAnimation.reset();
   }
 
   // 背景のアニメーションを制御
   onBgToggle() {
+    this.count++;
+
     window.clearTimeout(this.time); // マウスが動いている時はクリア
     if (this.bgAnimation.pause.status) this.bgAnimation.start(); // アニメーションが止まってる時のみ発火
-    this.time = window.setTimeout(() => this.bgAnimation.stop(), 5000); // マウスが動いてない場合、アニメーションを止める
+    this.time = window.setTimeout(() => this.bgAnimation.stop(), 100); // マウスが動いてない場合、アニメーションを止める
   }
 }
 
