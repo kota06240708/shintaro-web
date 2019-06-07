@@ -15,8 +15,7 @@ const options = {
       loop: false,
       freeMode: true,
       slidesPerView: 1.3,
-      centeredSlides: true,
-      simulateTouch: false
+      centeredSlides: true
     }
   }
 };
@@ -37,8 +36,6 @@ const swiperInit = () => {
       return false;
     });
   }
-
-  console.log(swiper);
 
   return swiper;
 };

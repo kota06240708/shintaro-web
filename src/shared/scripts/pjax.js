@@ -2,6 +2,7 @@ import Barba from 'barba.js';
 import { TweenMax } from 'gsap';
 import slide from './slide';
 import typing from './typing/text';
+import data from '../../../data/constants';
 
 //  ページ遷移はここで行っています。
 const pjax = () => {
@@ -56,7 +57,7 @@ const pjax = () => {
           }
 
           // topのタイトルが存在している時のみ発火
-          typing(['weired x avant_garde = beuatiful'], $$topTitle);
+          typing(data.globalTitle, $$topTitle);
         }
       });
     }
