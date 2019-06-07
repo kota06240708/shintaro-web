@@ -12,12 +12,12 @@ const bgTime = 100; // 背景のセットタイムアウトの時間
  */
 class Index {
   constructor() {
-    this.$$typing = document.querySelector('#js-typing');
+    this.$$title = document.querySelector('#js-typing');
     this.$$topTitle = document.querySelector('#js-top-text');
     this.$$globalTitle = document.querySelector('#js-global-title');
 
     // グローバルのタイピングのアニメーションを格納
-    this.typingGlobal = typing([subTitle], this.$$typing);
+    this.typingGlobal = typing([subTitle], this.$$title);
 
     // topのタイトルのタイピングのアニメーションを格納
     this.typingTop = typing([subTitle], this.$$topTitle);
@@ -85,9 +85,9 @@ class Index {
     let h = window.innerHeight;
 
     if (h < this.breakHeight) {
-      this.$$typing.style.display = 'none';
+      this.$$title.style.display = 'none';
     } else {
-      this.$$typing.style.display = 'block';
+      this.$$title.style.display = 'block';
     }
   }
 
