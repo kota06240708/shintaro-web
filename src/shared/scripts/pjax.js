@@ -57,7 +57,7 @@ const pjax = () => {
           }
 
           // topのタイトルが存在している時のみ発火
-          typing(data.globalTitle, $$topTitle);
+          typing([data.globalTitle], $$topTitle);
         }
       });
     }
