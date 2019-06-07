@@ -1138,7 +1138,8 @@ li {
   position: relative;
   z-index: 1; }
 .work-inner {
-  width: 100%; }
+  width: 100%;
+  padding-bottom: 40px; }
 .work-contents {
   width: 100%; }
 .work-description {
