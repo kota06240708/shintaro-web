@@ -1,80 +1,45 @@
 {
   "artist": {
+    "master": {
+      "name": "shintaro",
+      "type": "Artist",
+      "skills": [
+        "oF",
+        "TouchDesigner"
+      ],
+      "description": "TouchDesignerを得意とするクリエイター",
+      "image": "/image/sample01.jpg"
+    },
     "member": [
       {
-        "contents": [
-          {
-            "name": "shintaro",
-            "type": "Artist",
-            "skills": [
-              "oF",
-              "TouchDesigner"
-            ],
-            "description": "TouchDesignerを得意とするクリエイター",
-            "image": "/image/sample01.jpg"
-          },
-          {
-            "name": "Hoge",
-            "type": "IOS Engineer",
-            "skills": [
-              "swift",
-              "object-c",
-              "go"
-            ],
-            "description": "アプリ、サーバーサイドを熟知しているエンジニア",
-            "image": "/image/sample02.jpg"
-          }
-        ]
+        "name": "shintaro",
+        "type": "Artist",
+        "skills": [
+          "oF",
+          "TouchDesigner"
+        ],
+        "description": "TouchDesignerを得意とするクリエイター",
+        "image": "/image/sample01.jpg"
       },
       {
-        "contents": [
-          {
-            "name": "shintaro",
-            "type": "Artist",
-            "skills": [
-              "oF",
-              "TouchDesigner"
-            ],
-            "description": "TouchDesignerを得意とするクリエイター",
-            "image": "/image/sample01.jpg"
-          },
-          {
-            "name": "Hoge",
-            "type": "IOS Engineer",
-            "skills": [
-              "swift",
-              "object-c",
-              "go"
-            ],
-            "description": "アプリ、サーバーサイドを熟知しているエンジニア",
-            "image": "/image/sample02.jpg"
-          }
-        ]
+        "name": "shintaro",
+        "type": "Artist",
+        "skills": [
+          "oF",
+          "TouchDesigner"
+        ],
+        "description": "TouchDesignerを得意とするクリエイター",
+        "image": "/image/sample01.jpg"
       },
       {
-        "contents": [
-          {
-            "name": "shintaro",
-            "type": "Artist",
-            "skills": [
-              "oF",
-              "TouchDesigner"
-            ],
-            "description": "TouchDesignerを得意とするクリエイター",
-            "image": "/image/sample01.jpg"
-          },
-          {
-            "name": "Hoge",
-            "type": "IOS Engineer",
-            "skills": [
-              "swift",
-              "object-c",
-              "go"
-            ],
-            "description": "アプリ、サーバーサイドを熟知しているエンジニア",
-            "image": "/image/sample02.jpg"
-          }
-        ]
+        "name": "shintaro",
+        "type": "Artist",
+        "skills": [
+          "oF",
+          "TouchDesigner"
+        ],
+        "description": "TouchDesignerを得意とするクリエイター",
+        "image": "/image/sample01.jpg"
       }
     ]
   }

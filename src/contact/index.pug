@@ -3,12 +3,11 @@ extends ../shared/template/layout/_default
 block main
   .contact
     .contact-inner
-      h2.contact-title 
-        a.contact-link(href='mailto:shin.hyp@gmail.com') #{data.contact.mail}
+      h2.contact-title #{data.contact.mail}
       .contact-sns-wrap
         .contact-sns-title-wrap
           h2.contact-sns-title sns
         ul.contact-sns-list
           each sns in data.contact.sns
             li.contact-sns-lists
-              a.contact-link(href=`${sns.link}`) #{sns.name}
+              a.contact-link(href=`${sns.link}`, target='_blank') #{sns.name}

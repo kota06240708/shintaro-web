@@ -3,12 +3,11 @@ import typing from '../shared/scripts/typing/text';
 import bg from '../shared/scripts/typing/bg';
 import pjax from '../shared/scripts/pjax';
 
+const subTitle = 'weird x avant_garde = beuatiful';
+
 /**
  * @classdesc - 全ての処理をここで管理
  */
-
-const subTitle = 'weird x avant_garde = beuatiful';
-
 class Index {
   constructor() {
     this.$$typing = document.querySelector('#js-typing');
@@ -24,7 +23,6 @@ class Index {
     this.bgAnimation = bg(); // 背景アニメーションを格納
 
     this.time = -1; // mousemoveのタイム管理
-    this.count = 0; // mousemoveイベントが何回叩かれたかカウント
 
     // bind系
     this.onBgToggleBind = this.onBgToggle.bind(this);
@@ -99,8 +97,6 @@ class Index {
 
   // 背景のアニメーションを制御
   onBgToggle() {
-    this.count++;
-
     window.clearTimeout(this.time); // マウスが動いている時はクリア
     if (this.bgAnimation.pause.status) this.bgAnimation.start(); // アニメーションが止まってる時のみ発火
     this.time = window.setTimeout(() => this.bgAnimation.stop(), 100); // マウスが動いてない場合、アニメーションを止める

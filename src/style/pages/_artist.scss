@@ -4,21 +4,16 @@
 
 .artist-contents {
   max-width: 800px;
-  min-height: calc(50vh - 50px);
   margin: 0 auto;
   display: flex;
-  padding: 0 25px 60px;
+  padding: 0 25px;
 
-  .artist-image-wrap {
-    margin-right: 80px;
+  &_master {
+    padding: 0 25px 60px;
+    min-height: calc(50vh - 50px);
   }
 
-  &:last-child {
-    min-height: auto;
-    padding: 0 25px;
-  }
-
-  &:nth-child(even) {
+  &_member {
     flex-flow: row-reverse;
 
     .artist-image-wrap {
@@ -27,23 +22,30 @@
   }
 
   @include tb {
-    .artist-image-wrap {
-      margin-right: 25px;
+    &_master {
+      .artist-image-wrap {
+        margin-right: 25px;
+      }
+    }
+
+    &_member {
+      .artist-image-wrap {
+        margin-left: 25px;
+      }
     }
   }
 
   @include sp {
     display: block;
-    margin-bottom: 80px;
 
-    &:nth-child(even) {
+    &_master {
+      margin-bottom: 80px;
+    }
+
+    &_member {
       .artist-image-wrap {
         margin-left: 0;
       }
-    }
-
-    &:last-child {
-      margin-bottom: 0;
     }
   }
 }
