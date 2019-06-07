@@ -1138,8 +1138,11 @@ li {
   position: relative;
   z-index: 1; }
 .work-inner {
-  width: 100%; }
+  width: 100%;
+  padding-bottom: 60px; }
 .work-contents {
+  width: 100%; }
+.work-contents-inner {
   width: 100%; }
 .work-description {
   min-height: 200px;
@@ -1402,7 +1405,11 @@ li {
       color: #fff;
       line-height: 1.4; }
     .work-description {
-      padding: 0 25px 60px; }
+      min-height: 250px;
+      padding: 0 25px 30px; }
+    .work-img-wrap {
+      width: auto;
+      padding: 0 25px; }
     .work-skill-list {
       -webkit-flex-wrap: wrap;
           -ms-flex-wrap: wrap;
