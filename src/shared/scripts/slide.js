@@ -23,19 +23,20 @@ const options = {
 
 const swiperInit = () => {
   const swiper = new Swiper('.swiper-container', options);
+  const $$swiper = document.querySelector('.swiper-wrapper');
   const $$buttonRight = document.querySelector('#js-button-right');
   const $$buttonLeft = document.querySelector('#js-button-left');
 
-  $$buttonRight.addEventListener('click', () => {
-    swiper.slideNext();
-    return false;
-  });
-  $$buttonLeft.addEventListener('click', () => {
-    swiper.slidePrev();
-    return false;
-  });
-
-  console.log(swiper);
+  if ($$swiper) {
+    $$buttonRight.addEventListener('click', () => {
+      swiper.slideNext();
+      return false;
+    });
+    $$buttonLeft.addEventListener('click', () => {
+      swiper.slidePrev();
+      return false;
+    });
+  }
 
   console.log(swiper);
 
