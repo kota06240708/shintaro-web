@@ -13,6 +13,7 @@ const options = {
   breakpoints: {
     450: {
       loop: false,
+      simulateTouch: true,
       freeMode: true,
       slidesPerView: 1.3,
       centeredSlides: true
