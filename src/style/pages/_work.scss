@@ -5,10 +5,14 @@
 
 .work-inner {
   width: 100%;
-  padding-bottom: 40px;
+  padding-bottom: 60px;
 }
 
 .work-contents {
+  width: 100%;
+}
+
+.work-contents-inner {
   width: 100%;
 }
 
@@ -17,7 +21,8 @@
   padding-bottom: calc(50vh - 200px);
 
   @include sp {
-    padding: 0 25px 60px;
+    min-height: 250px;
+    padding: 0 25px 30px;
   }
 }
 
@@ -40,6 +45,11 @@
   width: 100%;
   max-width: 300px;
   margin: 0 auto;
+
+  @include sp {
+    width: auto;
+    padding: 0 25px;
+  }
 }
 
 .work-img {

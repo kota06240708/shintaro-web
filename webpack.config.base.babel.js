@@ -1,6 +1,5 @@
 import conf from './system/config';
 import PrettierPlugin from 'prettier-webpack-plugin';
-import webpack from 'webpack';
 import glob from 'glob';
 
 const entries = [];
@@ -33,10 +32,6 @@ export default {
     ]
   },
   plugins: [
-    new webpack.ProvidePlugin({
-      $: 'jquery',
-      jQuery: 'jquery'
-    }),
     new PrettierPlugin()
   ]
 };

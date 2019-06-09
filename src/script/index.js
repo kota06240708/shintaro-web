@@ -2,20 +2,22 @@ import swiper from '../shared/scripts/slide';
 import typing from '../shared/scripts/typing/text';
 import bg from '../shared/scripts/typing/bg';
 import pjax from '../shared/scripts/pjax';
+import data from '../../data/constants';
 
-const subTitle = 'weird x avant_garde = beuatiful';
+const subTitle = data.globalTitle; // グローバルタイトルの文言
+const bgTime = 100; // 背景のセットタイムアウトの時間
 
 /**
  * @classdesc - 全ての処理をここで管理
  */
 class Index {
   constructor() {
-    this.$$typing = document.querySelector('#js-typing');
+    this.$$title = document.querySelector('#js-typing');
     this.$$topTitle = document.querySelector('#js-top-text');
     this.$$globalTitle = document.querySelector('#js-global-title');
 
     // グローバルのタイピングのアニメーションを格納
-    this.typingGlobal = typing([subTitle], this.$$typing);
+    this.typingGlobal = typing([subTitle], this.$$title);
 
     // topのタイトルのタイピングのアニメーションを格納
     this.typingTop = typing([subTitle], this.$$topTitle);
@@ -27,7 +29,7 @@ class Index {
     // bind系
     this.onBgToggleBind = this.onBgToggle.bind(this);
     this.resetBind = this.resetTyping.bind(this);
-    this.onRisizeBind = this.onRisize.bind(this);
+    this.onResizeBind = this.onResize.bind(this);
 
     // ブレイクポイント
     this.breakPoint = 450;
@@ -45,7 +47,7 @@ class Index {
 
   // eventListernerをここで定義
   onListerner() {
-    window.addEventListener('resize', this.onRisizeBind); // リサイズイベント
+    window.addEventListener('resize', this.onResizeBind); // リサイズイベント
     this.checkHeight();
 
     // pcの時のみ発火
@@ -58,7 +60,7 @@ class Index {
   }
 
   // リサイズイベント
-  onRisize() {
+  onResize() {
     let w = window.innerWidth;
 
     this.checkHeight();
@@ -83,9 +85,9 @@ class Index {
     let h = window.innerHeight;
 
     if (h < this.breakHeight) {
-      this.$$typing.style.display = 'none';
+      this.$$title.style.display = 'none';
     } else {
-      this.$$typing.style.display = 'block';
+      this.$$title.style.display = 'block';
     }
   }
 
@@ -99,7 +101,7 @@ class Index {
   onBgToggle() {
     window.clearTimeout(this.time); // マウスが動いている時はクリア
     if (this.bgAnimation.pause.status) this.bgAnimation.start(); // アニメーションが止まってる時のみ発火
-    this.time = window.setTimeout(() => this.bgAnimation.stop(), 100); // マウスが動いてない場合、アニメーションを止める
+    this.time = window.setTimeout(() => this.bgAnimation.stop(), bgTime); // マウスが動いてない場合、アニメーションを止める
   }
 }
 

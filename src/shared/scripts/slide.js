@@ -3,14 +3,21 @@ import Swiper from 'swiper';
 const options = {
   loop: true,
   speed: 500,
-  allowClick: false,
-  touchRatio: 0.5,
-  paginationClickable: false,
+  simulateTouch: false,
   autoplay: {
     delay: 10000,
     stopOnLastSlide: false,
     disableOnInteraction: false,
     reverseDirection: false
+  },
+  breakpoints: {
+    450: {
+      loop: false,
+      simulateTouch: true,
+      freeMode: true,
+      slidesPerView: 1.3,
+      centeredSlides: true
+    }
   }
 };
 

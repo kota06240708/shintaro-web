@@ -1,1 +1,10 @@
-include ../index.pug
+extends ../shared/template/layout/_default
+
+block vars
+  -
+    var url = '../'
+
+block main
+  .top
+    .top-inner
+      h2#js-top-text.top-title.js-typing(data-text=`${data.siteWide.subTitle}`)
