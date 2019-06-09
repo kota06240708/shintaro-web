@@ -3,6 +3,7 @@ extends ../shared/template/layout/_default
 block vars
   -
     var title = 'shintaro-web'
+    var url = '../'
 
 block main
   .artist
@@ -30,7 +31,7 @@ block main
               .artist-contents-wrap
                 .artist-contents.artist-contents_member
                   .artist-image-wrap
-                    img.artist-image(src=`${item.image}`, alt='アーティスト')
+                    img.artist-image(src=`..${item.image}`, alt='アーティスト')
                   .artist-introduction
                     .artist-name-wrap
                       h2.artist-name #{item.name}
