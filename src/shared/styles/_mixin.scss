@@ -13,3 +13,12 @@
     opacity: 0.5;
   }
 }
+
+@mixin img-hover() {
+  opacity: 0.5;
+  transition: opacity 0.4s $easeInOutQuad;
+
+  &:hover {
+    opacity: 0.9;
+  }
+}

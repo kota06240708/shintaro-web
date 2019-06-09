@@ -12,6 +12,7 @@ const bgTime = 100; // 背景のセットタイムアウトの時間
  */
 class Index {
   constructor() {
+    this.$$titleWrap = document.querySelector('#js-typing-wrap');
     this.$$title = document.querySelector('#js-typing');
     this.$$topTitle = document.querySelector('#js-top-text');
     this.$$globalTitle = document.querySelector('#js-global-title');
@@ -53,6 +54,7 @@ class Index {
     // pcの時のみ発火
     if (window.innerWidth > this.breakPoint) {
       this.$$globalTitle.addEventListener('click', this.resetBind); // グローバルタイトルをリセットさせる
+      this.$$titleWrap.addEventListener('click', this.resetBind); // グローバルタイトルをリセットさせる
 
       // マウスのイベント
       document.addEventListener('mousemove', this.onBgToggleBind);
@@ -94,7 +96,6 @@ class Index {
   // グローバルのタイトルをリセット
   resetTyping() {
     this.typingGlobal.reset();
-    this.bgAnimation.reset();
   }
 
   // 背景のアニメーションを制御

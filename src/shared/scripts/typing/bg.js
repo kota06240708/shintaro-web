@@ -6,6 +6,7 @@ const bg = () => {
 
   const params = {
     strings: data.bgText,
+    shuffle: true,
     loop: true,
     fadeOut: true,
     typeSpeed: 30,
