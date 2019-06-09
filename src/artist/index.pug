@@ -8,18 +8,6 @@ block vars
 block main
   .artist
     .artist-inner
-      .artist-contents-wrap
-        .artist-contents.artist-contents_master
-          .artist-image-wrap
-            img.artist-image(src=`${data.artist.master.image}`, alt='アーティスト')
-          .artist-introduction
-            .artist-name-wrap
-              h2.artist-name #{data.artist.master.name}
-            p.artist-type #{data.artist.master.type}
-            ul.artist-skill-list
-              each skill in data.artist.master.skills
-                li.artist-skill-lists #{skill}
-            p.artist-description #{data.artist.master.description}
       .swiper-container
         #js-button-right.swipre-button-wrap.swipre-button-wrap_right
           .swipre-button-inner
@@ -30,8 +18,9 @@ block main
             .swiper-slide
               .artist-contents-wrap
                 .artist-contents.artist-contents_member
-                  .artist-image-wrap
-                    img.artist-image(src=`..${item.image}`, alt='アーティスト')
+                  .artist-image-wrap.artist-image-wrap_member
+                    a.artist-image-link(href=`${item.link}`, target='_blank')
+                      img.artist-image(src=`${item.image}`, alt='アーティスト')
                   .artist-introduction
                     .artist-name-wrap
                       h2.artist-name #{item.name}
@@ -39,4 +28,15 @@ block main
                     ul.artist-skill-list
                       each skill in item.skills
                         li.artist-skill-lists #{skill}
-                    p.artist-description #{item.description}
+      .artist-contents-wrap
+        .artist-contents.artist-contents_master
+          .artist-image-wrap
+            img.artist-image(src=`${data.artist.master.image}`, alt='アーティスト')
+          .artist-introduction
+            .artist-name-wrap
+              h2.artist-name #{data.artist.master.name}
+            p.artist-type founder
+            p.artist-type #{data.artist.master.type}
+            ul.artist-skill-list
+              each skill in data.artist.master.skills
+                li.artist-skill-lists #{skill}

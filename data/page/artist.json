@@ -1,45 +1,24 @@
 {
   "artist": {
     "master": {
-      "name": "shintaro",
-      "type": "Artist",
+      "name": "shintaro ono",
+      "type": "middle of engineer_artist",
       "skills": [
-        "oF",
-        "TouchDesigner"
+        "notch",
+        "touchdesigner"
       ],
-      "description": "TouchDesignerを得意とするクリエイター",
-      "image": "/image/sample01.jpg"
+      "image": "/image/artist/ono.png"
     },
     "member": [
       {
-        "name": "shintaro",
-        "type": "Artist",
+        "name": "adumaya",
+        "type": "collaborated photographer",
         "skills": [
-          "oF",
-          "TouchDesigner"
+          "photographer",
+          "sony alpha7III"
         ],
-        "description": "TouchDesignerを得意とするクリエイター",
-        "image": "/image/sample01.jpg"
-      },
-      {
-        "name": "shintaro",
-        "type": "Artist",
-        "skills": [
-          "oF",
-          "TouchDesigner"
-        ],
-        "description": "TouchDesignerを得意とするクリエイター",
-        "image": "/image/sample01.jpg"
-      },
-      {
-        "name": "shintaro",
-        "type": "Artist",
-        "skills": [
-          "oF",
-          "TouchDesigner"
-        ],
-        "description": "TouchDesignerを得意とするクリエイター",
-        "image": "/image/sample01.jpg"
+        "image": "/image/artist/aduma.png",
+        "link": "https://kojiaduma.tumblr.com/"
       }
     ]
   }

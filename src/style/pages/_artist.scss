@@ -6,11 +6,13 @@
   max-width: 800px;
   margin: 0 auto;
   display: flex;
+  align-items: center;
   padding: 0 25px;
 
   &_master {
     padding: 0 25px 60px;
-    min-height: calc(50vh - 50px);
+    padding-top: calc(50vh - 245px);
+    // min-height: calc(50vh - 140);
   }
 
   &_member {
@@ -39,7 +41,7 @@
     display: block;
 
     &_master {
-      margin-bottom: 80px;
+      padding-top: 80px;
     }
 
     &_member {
@@ -52,6 +54,7 @@
 
 .artist-image-wrap {
   width: calc(40% + 80px);
+  opacity: 0.5;
   @include tb {
     width: calc(40% + 25px);
   }
@@ -60,11 +63,21 @@
     width: 100%;
     margin: 0 0 40px;
   }
+
+  &_member {
+    @include img-hover;
+  }
+}
+
+.artist-image-link {
+  width: 100%;
+  display: block;
 }
 
 .artist-image {
   width: 100%;
-  max-width: 300px;
+  max-width: 200px;
+  margin: 0 auto;
   display: block;
 
   @include sp {

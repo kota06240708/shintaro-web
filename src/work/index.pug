@@ -17,6 +17,9 @@ block main
             .swiper-slide
               .work-contents
                 .work-contents-inner
+                  .work-img-wrap
+                    a.work-img-link(href=`${item.link}`, target='_blank')
+                      .work-img(style=`background-image: url(${item.image})`)
                   .work-description
                     .work-contents-title-wrap
                       h2.work-contents-title #{item.title}
@@ -25,8 +28,3 @@ block main
                         li.work-people-lists
                           p.work-people-description.work-people-description_role #{peoples.role}:
                           p.work-people-description.work-people-description_name #{peoples.name}
-                    ul.work-skill-list
-                      each skills in item.skill
-                        li.work-skill-lists #{skills}
-                  .work-img-wrap
-                    .work-img(style=`background-image: url(..${item.image})`)

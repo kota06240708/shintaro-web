@@ -2,49 +2,15 @@
   "work": {
     "contents": [
       {
-        "title": "r&d",
+        "title": "wave_equation",
         "people": [
           {
-            "role": "edit",
-            "name": "shintaro"
-          },
-          {
-            "role": "sound",
-            "name": "yahyel"
+            "role": "coding",
+            "name": "shintaro ono"
           }
         ],
-        "skill": ["js", "unity"],
-        "image": "/image/sample01.jpg"
-      },
-      {
-        "title": "hovers",
-        "people": [
-          {
-            "role": "edit",
-            "name": "shintaro"
-          },
-          {
-            "role": "sound",
-            "name": "yahyel"
-          }
-        ],
-        "skill": ["js", "unity", "object-c", "swift", "css", "C++"],
-        "image": "/image/sample02.jpg"
-      },
-      {
-        "title": "NBA",
-        "people": [
-          {
-            "role": "edit",
-            "name": "shintaro"
-          },
-          {
-            "role": "sound",
-            "name": "yahyel"
-          }
-        ],
-        "skill": ["swift"],
-        "image": "/image/sample01.jpg"
+        "image": "/image/work/waveequation.png",
+        "link": "https://youtu.be/2WpyM-V207c"
       }
     ]
   }

@@ -2,10 +2,10 @@ import Swiper from 'swiper';
 
 const options = {
   loop: true,
-  speed: 500,
+  speed: 700,
   simulateTouch: false,
   autoplay: {
-    delay: 10000,
+    delay: 7000,
     stopOnLastSlide: false,
     disableOnInteraction: false,
     reverseDirection: false
