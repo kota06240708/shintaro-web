@@ -1,4 +1,9 @@
 extends ../shared/template/layout/_default
+
+block vars
+  -
+    var url = '../'
+
 block main
   .work
     .work-inner
@@ -24,4 +29,4 @@ block main
                       each skills in item.skill
                         li.work-skill-lists #{skills}
                   .work-img-wrap
-                    .work-img(style=`background-image: url(${item.image})`)
+                    .work-img(style=`background-image: url(..${item.image})`)
