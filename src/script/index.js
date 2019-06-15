@@ -3,6 +3,7 @@ import typing from '../shared/scripts/typing/text';
 import bg from '../shared/scripts/typing/bg';
 import pjax from '../shared/scripts/pjax';
 import data from '../../data/constants';
+import location from '../shared/scripts/location';
 
 const subTitle = data.globalTitle; // グローバルタイトルの文言
 const bgTime = 100; // 背景のセットタイムアウトの時間
@@ -38,6 +39,7 @@ class Index {
   }
 
   init() {
+    location(); // 現在ページを確認
     swiper(); // スライドを発火
     pjax(); // pjaxを発火
     this.typingGlobal; // グローバルのタイピングのアニメーションを発火

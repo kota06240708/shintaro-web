@@ -34,6 +34,19 @@
 }
 
 .header-menus {
+  opacity: 1;
+  transition: opacity 0.3s $easeOutSine;
+
+  &.current {
+    opacity: 0.5;
+
+    .header-link {
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+
   @include font-size(24);
   padding: 0 50px;
 
