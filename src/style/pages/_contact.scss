@@ -1,6 +1,10 @@
 .contact-inner {
   width: 100%;
   padding-top: 80px;
+
+  @include sp {
+    padding-top: calc(50vh - 183px);
+  }
 }
 
 .contact-title {
@@ -11,7 +15,7 @@
   padding-bottom: calc(50vh - 100px);
 
   @include sp {
-    padding-bottom: 60px;
+    padding-bottom: 20px;
   }
 }
 
@@ -32,9 +36,7 @@
   }
 
   @include sp {
-    display: block;
-    margin-bottom: 40px;
-    text-align: center;
+    display: none;
   }
 }
 
@@ -59,7 +61,7 @@
   }
 
   @include sp {
-    display: block;
+    display: none;
     text-align: center;
   }
 }

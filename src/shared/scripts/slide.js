@@ -3,7 +3,6 @@ import Swiper from 'swiper';
 const options = {
   loop: true,
   speed: 700,
-  simulateTouch: false,
   autoplay: {
     delay: 7000,
     stopOnLastSlide: false,
@@ -13,8 +12,6 @@ const options = {
   breakpoints: {
     450: {
       loop: false,
-      simulateTouch: true,
-      freeMode: true,
       slidesPerView: 1.3,
       centeredSlides: true
     }

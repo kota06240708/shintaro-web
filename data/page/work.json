@@ -2,15 +2,38 @@
   "work": {
     "contents": [
       {
-        "title": "wave_equation",
+        "title": "mutek.jp 2019",
         "people": [
           {
-            "role": "coding",
+            "role": "visual",
             "name": "shintaro ono"
+          },
+          {
+            "role": "human modeling",
+            "name": "hitomu ito"
+          },
+          {
+            "role": "shoot/edit",
+            "name": "koji azuma"
           }
         ],
-        "image": "/image/work/waveequation.png",
-        "link": "https://youtu.be/2WpyM-V207c"
+        "image": "/image/work/mutek.png",
+        "link": "https://youtu.be/RNatJdGiH4U"
+      },
+      {
+        "title": "avant_garde web site ",
+        "people": [
+          {
+            "role": "design",
+            "name": "shintaro ono"
+          },
+          {
+            "role": "coding",
+            "name": "kota"
+          }
+        ],
+        "image": "/image/work/avant-garde.png",
+        "link": "https://youtu.be/RNatJdGiH4U"
       },
       {
         "title": "sxsw 2019",
@@ -24,19 +47,15 @@
         "link": "https://youtu.be/STlAlTRJwpY"
       },
       {
-        "title": "mutek.jp 2019",
+        "title": "wave_equation",
         "people": [
           {
-            "role": "visual",
+            "role": "coding",
             "name": "shintaro ono"
-          },
-          {
-            "role": "shoot/edit",
-            "name": "koji azuma"
           }
         ],
-        "image": "/image/work/mutek.png",
-        "link": "https://youtu.be/RNatJdGiH4U"
+        "image": "/image/work/waveequation.png",
+        "link": "https://youtu.be/2WpyM-V207c"
       }
     ]
   }

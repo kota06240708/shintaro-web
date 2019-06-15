@@ -42,6 +42,10 @@
 
     &_master {
       padding-top: 80px;
+
+      .artist-image-wrap {
+        padding: 0 40px;
+      }
     }
 
     &_member {
@@ -62,6 +66,14 @@
   @include sp {
     width: 100%;
     margin: 0 0 40px;
+  }
+
+  &.nothing {
+    pointer-events: none;
+
+    &:hover {
+      opacity: 0.5;
+    }
   }
 
   &_member {

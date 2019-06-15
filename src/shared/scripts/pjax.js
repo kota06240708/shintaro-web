@@ -3,6 +3,7 @@ import { TweenMax } from 'gsap';
 import slide from './slide';
 import typing from './typing/text';
 import data from '../../../data/constants';
+import location from './location';
 
 //  ページ遷移はここで行っています。
 const pjax = () => {
@@ -30,6 +31,8 @@ const pjax = () => {
     loadIn: function() {
       const _this = this;
       const $$newContainer = this.newContainer;
+
+      location(); // 現在のページを更新する関数
 
       // 古い要素がまだ残ってるので消す
       this.oldContainer.style.display = 'none';

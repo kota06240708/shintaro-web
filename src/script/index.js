@@ -3,6 +3,7 @@ import typing from '../shared/scripts/typing/text';
 import bg from '../shared/scripts/typing/bg';
 import pjax from '../shared/scripts/pjax';
 import data from '../../data/constants';
+import location from '../shared/scripts/location';
 
 const subTitle = data.globalTitle; // グローバルタイトルの文言
 const bgTime = 100; // 背景のセットタイムアウトの時間
@@ -38,6 +39,7 @@ class Index {
   }
 
   init() {
+    location(); // 現在ページを確認
     swiper(); // スライドを発火
     pjax(); // pjaxを発火
     this.typingGlobal; // グローバルのタイピングのアニメーションを発火
@@ -51,13 +53,13 @@ class Index {
     window.addEventListener('resize', this.onResizeBind); // リサイズイベント
     this.checkHeight();
 
+    // マウスのイベント
+    document.addEventListener('mousemove', this.onBgToggleBind);
+
     // pcの時のみ発火
     if (window.innerWidth > this.breakPoint) {
       this.$$globalTitle.addEventListener('click', this.resetBind); // グローバルタイトルをリセットさせる
       this.$$titleWrap.addEventListener('click', this.resetBind); // グローバルタイトルをリセットさせる
-
-      // マウスのイベント
-      document.addEventListener('mousemove', this.onBgToggleBind);
     }
   }
 
@@ -72,13 +74,7 @@ class Index {
       window.clearTimeout(this.time);
 
       document.removeEventListener('click', this.resetBind);
-
-      // マウスのイベントをクリア
-      document.removeEventListener('mousemove', this.onBgToggleBind);
     } else {
-      // マウスのイベントを発火
-      document.addEventListener('mousemove', this.onBgToggleBind);
-
       this.$$globalTitle.addEventListener('click', this.resetBind);
     }
   }

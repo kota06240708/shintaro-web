@@ -31,7 +31,7 @@
 }
 
 .work-contents-title {
-  @include font-size(32);
+  @include font-size(18);
   display: inline;
   font-weight: normal;
   text-align: center;
@@ -45,11 +45,12 @@
   width: 100%;
   max-width: 300px;
   margin: 0 auto;
-  margin-bottom: calc(50vh - 275px);
+  margin-bottom: calc(50vh - 245px);
 
   @include sp {
     min-height: 250px;
-    padding: 0 25px 30px;
+    padding: 0 0 30px;
+    margin-bottom: 40px;
   }
 }
 
@@ -73,7 +74,7 @@
 }
 
 .work-people-lists {
-  @include font-size(24);
+  @include font-size(18);
   display: flex;
   justify-content: center;
   margin-bottom: 5px;

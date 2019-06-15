@@ -8,7 +8,7 @@ block main
   .contact
     .contact-inner
       h2.contact-title
-        a.contact-link(href='mailto:shin.hyp@gmail.com') #{data.contact.mail}
+        a.contact-link(href=`mailto:${data.contact.mail}`) #{data.contact.mail}
       .contact-sns-wrap
         .contact-sns-title-wrap
           h2.contact-sns-title sns

@@ -4,5 +4,5 @@ header.header
     ul.header-menu
       .header-menu-inner
         each item in data.siteWide.menu
-          li.header-menus
+          li.header-menus(class=`header-menus-${item.name}`)
             a.header-link(href=`${item.link}`) #{item.name}
