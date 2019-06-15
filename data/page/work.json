@@ -9,6 +9,10 @@
             "name": "shintaro ono"
           },
           {
+            "role": "human modeling",
+            "name": "hitomu ito"
+          },
+          {
             "role": "shoot/edit",
             "name": "koji azuma"
           }
@@ -20,12 +24,12 @@
         "title": "avant_garde web site ",
         "people": [
           {
-            "role": "coding",
-            "name": "kota ichikawa"
-          },
-          {
             "role": "design",
             "name": "shintaro ono"
+          },
+          {
+            "role": "coding",
+            "name": "kota"
           }
         ],
         "image": "/image/work/avant-garde.png",

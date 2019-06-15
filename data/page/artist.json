@@ -27,6 +27,29 @@
         ],
         "image": "/image/artist/mieciaro.png",
         "link": "https://kojiaduma.tumblr.com/"
+      },
+      {
+        "name": "kota",
+        "type": "engineer",
+        "skills": [
+          "js",
+          "vue",
+          "react",
+          "laravel",
+          "AWS"
+        ],
+        "image": "/image/artist/kota.png",
+        "link": "https://happy-sammet-97e686.netlify.com/"
+      },
+      {
+        "name": "hitomu ito",
+        "type": "collaborated cg artist",
+        "skills": [
+          "sculptor",
+          "hard surface modeler"
+        ],
+        "image": "",
+        "link": ""
       }
     ]
   }

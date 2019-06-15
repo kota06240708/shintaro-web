@@ -68,6 +68,14 @@
     margin: 0 0 40px;
   }
 
+  &.nothing {
+    pointer-events: none;
+
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+
   &_member {
     @include img-hover;
   }
