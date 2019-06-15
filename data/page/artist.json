@@ -18,6 +18,15 @@
         ],
         "image": "/image/artist/aduma.png",
         "link": "https://kojiaduma.tumblr.com/"
+      },
+      {
+        "name": "mieciaro",
+        "type": "collaborated talent",
+        "skills": [
+          "model"
+        ],
+        "image": "/image/artist/mieciaro.png",
+        "link": "https://kojiaduma.tumblr.com/"
       }
     ]
   }

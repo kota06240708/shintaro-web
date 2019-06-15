@@ -1,6 +1,6 @@
 {
   "contact": {
-    "mail": "shin.hyp@gmail.com",
+    "mail": "w_a_b@avant-garde.id",
     "sns": [
       {
         "name":"youtube",
@@ -21,6 +21,10 @@
       {
         "name":"github",
         "link": "https://github.com/shintaron"
+      },
+      {
+        "name":"qiita",
+        "link": "https://qiita.com/shintarono"
       }
     ]
   }

@@ -2,28 +2,6 @@
   "work": {
     "contents": [
       {
-        "title": "wave_equation",
-        "people": [
-          {
-            "role": "coding",
-            "name": "shintaro ono"
-          }
-        ],
-        "image": "/image/work/waveequation.png",
-        "link": "https://youtu.be/2WpyM-V207c"
-      },
-      {
-        "title": "sxsw 2019",
-        "people": [
-          {
-            "role": "visual/sensor engineering",
-            "name": "shintaro ono"
-          }
-        ],
-        "image": "/image/work/sxsw.jpg",
-        "link": "https://youtu.be/STlAlTRJwpY"
-      },
-      {
         "title": "mutek.jp 2019",
         "people": [
           {
@@ -37,6 +15,43 @@
         ],
         "image": "/image/work/mutek.png",
         "link": "https://youtu.be/RNatJdGiH4U"
+      },
+      {
+        "title": "avant_garde web site ",
+        "people": [
+          {
+            "role": "coding",
+            "name": "kota ichikawa"
+          },
+          {
+            "role": "design",
+            "name": "shintaro ono"
+          }
+        ],
+        "image": "/image/work/avant-garde.png",
+        "link": "https://youtu.be/RNatJdGiH4U"
+      },
+      {
+        "title": "sxsw 2019",
+        "people": [
+          {
+            "role": "visual/sensor engineering",
+            "name": "shintaro ono"
+          }
+        ],
+        "image": "/image/work/sxsw.jpg",
+        "link": "https://youtu.be/STlAlTRJwpY"
+      },
+      {
+        "title": "wave_equation",
+        "people": [
+          {
+            "role": "coding",
+            "name": "shintaro ono"
+          }
+        ],
+        "image": "/image/work/waveequation.png",
+        "link": "https://youtu.be/2WpyM-V207c"
       }
     ]
   }
