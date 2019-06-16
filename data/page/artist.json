@@ -26,17 +26,17 @@
           "model"
         ],
         "image": "/image/artist/mieciaro.png",
-        "link": "https://kojiaduma.tumblr.com/"
+        "link": "https://www.instagram.com/mieciaro"
       },
       {
         "name": "kota",
-        "type": "engineer",
+        "type": "collaborated engineer",
         "skills": [
           "js",
           "vue",
           "react",
           "laravel",
-          "AWS"
+          "aws"
         ],
         "image": "/image/artist/kota.png",
         "link": "https://happy-sammet-97e686.netlify.com/"
@@ -49,7 +49,7 @@
           "hard surface modeler"
         ],
         "image": "",
-        "link": ""
+        "link": "https://hitomuito.wixsite.com/portfolio"
       }
     ]
   }

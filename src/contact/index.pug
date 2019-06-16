@@ -10,8 +10,6 @@ block main
       h2.contact-title
         a.contact-link(href=`mailto:${data.contact.mail}`) #{data.contact.mail}
       .contact-sns-wrap
-        .contact-sns-title-wrap
-          h2.contact-sns-title sns
         ul.contact-sns-list
           each sns in data.contact.sns
             li.contact-sns-lists

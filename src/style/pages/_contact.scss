@@ -3,7 +3,7 @@
   padding-top: 80px;
 
   @include sp {
-    padding-top: calc(50vh - 183px);
+    padding: 60px 0 40px;
   }
 }
 
@@ -15,7 +15,7 @@
   padding-bottom: calc(50vh - 100px);
 
   @include sp {
-    padding-bottom: 20px;
+    padding-bottom: 80px;
   }
 }
 
@@ -24,30 +24,6 @@
   color: #fff;
   text-decoration: none;
   display: block;
-}
-
-.contact-sns-title-wrap {
-  display: none;
-
-  @include tb {
-    display: block;
-    margin-bottom: 40px;
-    text-align: center;
-  }
-
-  @include sp {
-    display: none;
-  }
-}
-
-.contact-sns-title {
-  @include font-size(24);
-  display: inline;
-  color: #fff;
-  font-weight: normal;
-  text-align: center;
-  padding-bottom: 5px;
-  border-bottom: solid 1px #fff;
 }
 
 .contact-sns-list {
@@ -61,7 +37,7 @@
   }
 
   @include sp {
-    display: none;
+    display: block;
     text-align: center;
   }
 }
