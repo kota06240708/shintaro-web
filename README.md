@@ -70,8 +70,6 @@ yarn style:lint
 ├── dist       # 開発ディレクトリ
 ├── docs       # 本番環境向けのディレクトリ書出し先
 ├── src        # 実際に手を動かすディレクトリ
-├── server.js  # browser-syncの設定ディレクトリ
 └── system     # ビルド環境
-
 ```
 
