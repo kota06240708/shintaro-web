@@ -39,10 +39,9 @@ brew install yarn
 
 ** yarnがインストールできているか確認 **
 
-｀｀｀bash
-# output: 1.15.2
-yarn -v
-｀｀｀
+```bash
+yarn -v # output: 1.15.2
+```
 
 ** 各コマンド **
 
