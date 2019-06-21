@@ -27,23 +27,23 @@ shintaro's web site
 * node.js v10.15.3
 * yarn
 
-** macでのインストール **
+**macでのインストール**
 
 ```bash
 brew install yarn
 ```
 
-** windowsでのインストール **
+**windowsでのインストール**
 
 [こちら](https://yarnpkg.com/ja/docs/install#windows-stable) からダウンロードしてください。
 
-** yarnがインストールできているか確認 **
+**yarnがインストールできているか確認**
 
 ```bash
 yarn -v # output: 1.15.2
 ```
 
-** 各コマンド **
+**各コマンド**
 
 ```bash
 # 依存モジュールをインストール。 初回時のみ使う
