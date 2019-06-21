@@ -47,19 +47,19 @@ yarn -v # output: 1.15.2
 
 ```bash
 # 依存モジュールをインストール。 初回時のみ使う
-$ yarn install
+yarn install
 
 # 開発開始
-$ yarn start
+yarn start
 
 # 本番環境生成
-$ yarn build
+yarn build
 
 # 本番環境のデバック(docsファイルが無い場合、エラーになる)
-$ yarn browser
+yarn browser
 
 # cssのコードをチェック + 自動修正
-$ yarn style:lint
+yarn style:lint
 ```
 
 ## Structure
