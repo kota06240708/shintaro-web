@@ -9,7 +9,6 @@
     "build": "cross-env NODE_ENV=docs gulp build",
     "browser": "browser-sync start -s 'docs'",
     "lint:html": "gulp pug:lint",
-    "script:lint": "eslint --fix --ext .js --ignore-path .gitignore .",
     "style:lint": "stylelint --fix \"**/*.scss\"",
     "lint-staged": "lint-staged"
   },
