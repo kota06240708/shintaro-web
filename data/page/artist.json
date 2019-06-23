@@ -20,15 +20,6 @@
         "link": "https://kojiaduma.tumblr.com/"
       },
       {
-        "name": "mieciaro",
-        "type": "collaborated talent",
-        "skills": [
-          "model"
-        ],
-        "image": "/image/artist/mieciaro.png",
-        "link": "https://www.instagram.com/mieciaro"
-      },
-      {
         "name": "kota",
         "type": "collaborated engineer",
         "skills": [
@@ -49,6 +40,15 @@
         ],
         "image": "/image/artist/hitomun.jpg",
         "link": "https://hitomuito.wixsite.com/portfolio"
+      },
+      {
+        "name": "mieciaro",
+        "type": "collaborated talent",
+        "skills": [
+          "model"
+        ],
+        "image": "/image/artist/mieciaro.png",
+        "link": "https://www.instagram.com/mieciaro"
       }
     ]
   }
