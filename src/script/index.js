@@ -50,16 +50,34 @@ class Index {
 
   // eventListernerをここで定義
   onListerner() {
-    window.addEventListener('resize', this.onResizeBind); // リサイズイベント
-    this.checkHeight();
+    const ua = window.navigator.userAgent;
 
-    // マウスのイベント
-    document.addEventListener('mousemove', this.onBgToggleBind);
+    if (
+      ua.indexOf('iPhone') > 0 ||
+      ua.indexOf('iPod') > 0 ||
+      (ua.indexOf('Android') > 0 && ua.indexOf('Mobile') > 0)
+    ) {
+      // スマホの処理
+      window.addEventListener(
+        'touchmove',
+        () => {
+          this.onBgToggleBind();
+        },
+        { passive: false }
+      );
+    } else {
+      // pcの処理
+      window.addEventListener('resize', this.onResizeBind); // リサイズイベント
+      this.checkHeight();
 
-    // pcの時のみ発火
-    if (window.innerWidth > this.breakPoint) {
-      this.$$globalTitle.addEventListener('click', this.resetBind); // グローバルタイトルをリセットさせる
-      this.$$titleWrap.addEventListener('click', this.resetBind); // グローバルタイトルをリセットさせる
+      // マウスのイベント
+      document.addEventListener('mousemove', this.onBgToggleBind);
+
+      // pcの時のみ発火
+      if (window.innerWidth > this.breakPoint) {
+        this.$$globalTitle.addEventListener('click', this.resetBind); // グローバルタイトルをリセットさせる
+        this.$$titleWrap.addEventListener('click', this.resetBind); // グローバルタイトルをリセットさせる
+      }
     }
   }
 
