@@ -4,6 +4,7 @@ import bg from '../shared/scripts/typing/bg';
 import pjax from '../shared/scripts/pjax';
 import data from '../../data/constants';
 import location from '../shared/scripts/location';
+import loading from '../shared/scripts/loading';
 
 const subTitle = data.globalTitle; // グローバルタイトルの文言
 const bgTime = 100; // 背景のセットタイムアウトの時間
@@ -46,6 +47,8 @@ class Index {
     this.typingTop; // topのタイトルのタイピングのアニメーションを発火
     this.onListerner(); // eventListernerを発火
     this.bgAnimation.stop();
+
+    loading();
   }
 
   // eventListernerをここで定義

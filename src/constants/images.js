@@ -7,5 +7,5 @@ export const images = [
   '/image/work/mutek.png',
   '/image/work/avant-garde.png',
   '/image/work/sxsw.jpg',
-  '/image/work/waveequation.png',
-]
+  '/image/work/waveequation.png'
+];
