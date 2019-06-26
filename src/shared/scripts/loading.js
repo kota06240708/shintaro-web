@@ -1,8 +1,10 @@
 import { images } from '../../constants/images';
+import { TweenLite } from 'gsap';
 
 const loading = () => {
-  const loads = [];
+  const loads = []; // 画像を読み込むpromiseを追加していく
 
+  // 画像を先読み
   images.forEach(r => {
     const image = new Image();
     const load = new Promise(resolve => {
@@ -15,6 +17,7 @@ const loading = () => {
 
   Promise.all(loads).then(values => {
     console.log(values);
+    console.log(TweenLite);
   });
 };
 

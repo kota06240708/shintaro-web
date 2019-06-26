@@ -5,6 +5,10 @@
     url('../fonts/Futura-Std-Light.otf') format('opentype');
 }
 
+.main {
+  display: none;
+}
+
 html {
   font-size: 62.5%;
   overflow-y: visible;

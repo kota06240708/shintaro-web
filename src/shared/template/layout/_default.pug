@@ -17,14 +17,16 @@ html(lang='ja')
     script(src=`${url}script/index.bundle.js`)
 
     body.body
-      include ../module/_header
-      #js-bg.bg
-      .title-wrap
-        .title-position-wrap
-          .title-position-inner
-            #js-typing-wrap.title-inner
-              h2#js-typing.title(data-text=`${data.siteWide.subTitle}`)
-      #barba-wrapper
-        .barba-container
-          block main
-      //- include ../module/_footer
+      include ../module/_loading
+      .main
+        include ../module/_header
+        #js-bg.bg
+        .title-wrap
+          .title-position-wrap
+            .title-position-inner
+              #js-typing-wrap.title-inner
+                h2#js-typing.title(data-text=`${data.siteWide.subTitle}`)
+        #barba-wrapper
+          .barba-container
+            block main
+        //- include ../module/_footer
