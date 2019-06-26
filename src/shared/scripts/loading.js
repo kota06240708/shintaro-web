@@ -1,7 +1,12 @@
 import { images } from '../../constants/images';
 import { TweenLite } from 'gsap';
 
-const loading = () => {
+/**
+ * ローディングの設定
+ * @param {Index} Index ローディングが終わった時に叩かせるインスタンスを受け取る
+ */
+
+const loading = Index => {
   const loads = []; // 画像を読み込むpromiseを追加していく
   const $$loading = document.getElementById('js-loading');
   const $$main = document.getElementById('js-main');
@@ -21,8 +26,12 @@ const loading = () => {
     $$main.style.display = 'block';
 
     TweenLite.to($$loading, 0.4, {
-      delay: 0.4,
-      autoAlpha: 0
+      delay: 4.4,
+      autoAlpha: 0,
+      onComplete: () => {
+        const index = new Index();
+        index.init();
+      }
     });
   });
 };

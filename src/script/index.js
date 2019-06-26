@@ -47,8 +47,6 @@ class Index {
     this.typingTop; // topのタイトルのタイピングのアニメーションを発火
     this.onListerner(); // eventListernerを発火
     this.bgAnimation.stop();
-
-    loading();
   }
 
   // eventListernerをここで定義
@@ -125,7 +123,6 @@ class Index {
 
 (() => {
   window.addEventListener('DOMContentLoaded', () => {
-    const index = new Index();
-    index.init();
+    loading(Index);
   });
 })();
