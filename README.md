@@ -2,7 +2,7 @@
 
 shintaro's web site
 
-[http://avant-garde](http://avant-garde.id.s3-website-us-west-2.amazonaws.com/)
+[http://w-avantgarde-b.com/](http://w-avantgarde-b.com/)
 
 
 ## Overview
