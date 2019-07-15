@@ -10,6 +10,11 @@
 
 .work-contents {
   width: 100%;
+
+  @include sp {
+    width: 90%;
+    margin: 0 auto;
+  }
 }
 
 .work-contents-inner {
@@ -22,7 +27,6 @@
   @include sp {
     width: auto;
     min-height: auto;
-    padding: 0 10px;
   }
 }
 
@@ -49,8 +53,7 @@
   margin-bottom: calc(50vh - 245px);
 
   @include sp {
-    padding: 0 0 30px;
-    margin-bottom: 40px;
+    margin-bottom: 70px;
   }
 }
 
