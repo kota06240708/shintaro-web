@@ -11,8 +11,9 @@ block main
       .bio-contents-wrap
         .bio-contents
           .bio-image-wrap
-            img.bio-image(
-              src=`${data.artist.master.image}`, alt='アーティスト')
+            a.bio-link(href='/unpublic')
+              img.bio-image(
+                src=`${data.artist.master.image}`, alt='アーティスト')
           .bio-introduction
             .bio-name-wrap
               h2.bio-name #{data.artist.master.name}
