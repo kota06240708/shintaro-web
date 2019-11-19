@@ -1,0 +1,90 @@
+.bio-contents-wrap {
+  width: 100%;
+}
+
+.bio-contents {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 25px;
+  margin-bottom: 125px;
+}
+
+.bio-image-link {
+  width: 100%;
+  display: block;
+}
+
+.bio-image {
+  width: 100%;
+  max-width: 200px;
+  margin: 0 auto;
+  display: block;
+
+  @include sp {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+.bio-introduction {
+  @include font-size(18);
+  text-align: center;
+  color: #fff;
+  padding-left: 50px;
+}
+
+.bio-name-wrap {
+  margin-bottom: 10px;
+}
+
+.bio-name {
+  padding-bottom: 5px;
+  font-weight: normal;
+  display: inline;
+  border-bottom: solid 1px #fff;
+}
+
+.bio-type {
+  padding-bottom: 10px;
+}
+
+.bio-skill-list {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+
+.bio-skill-lists {
+  margin-right: 20px;
+  position: relative;
+
+  &::after {
+    content: '/';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -17px;
+  }
+
+  &:last-child {
+    margin-right: 0;
+
+    &::after {
+      content: none;
+    }
+  }
+}
+
+.bio-description-wrap {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.bio-description {
+  @include font-size(18);
+  color: #fff;
+}

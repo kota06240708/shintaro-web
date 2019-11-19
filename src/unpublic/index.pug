@@ -1,0 +1,31 @@
+extends ../shared/template/layout/_default
+
+block vars
+  -
+    var title = 'shintaro-web'
+    var url = '../'
+
+block main
+  .work
+    .work-inner
+      .swiper-container
+        #js-button-right.swipre-button-wrap.swipre-button-wrap_work.swipre-button-wrap_right
+          .swipre-button-inner
+        #js-button-left.swipre-button-wrap.swipre-button-wrap_work.swipre-button-wrap_left
+          .swipre-button-inner
+        .swiper-wrapper
+          each item in data.unpublic.contents
+            .swiper-slide
+              .work-contents
+                .work-contents-inner
+                  .work-img-wrap
+                    a.work-img-link(href=`${item.link}`, target='_blank')
+                      .work-img(style=`background-image: url(${item.image})`)
+                  .work-description
+                    .work-contents-title-wrap
+                      h2.work-contents-title #{item.title}
+                    ul.work-people-list
+                      each peoples in item.people
+                        li.work-people-lists
+                          p.work-people-description.work-people-description_role #{peoples.role}:
+                          p.work-people-description.work-people-description_name #{peoples.name}

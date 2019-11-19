@@ -1,0 +1,25 @@
+extends ../shared/template/layout/_default
+
+block vars
+  -
+    var title = 'shintaro-web'
+    var url = '../'
+
+block main
+  .bio
+    .bio-inner
+      .bio-contents-wrap
+        .bio-contents
+          .bio-image-wrap
+            img.bio-image(
+              src=`${data.artist.master.image}`, alt='アーティスト')
+          .bio-introduction
+            .bio-name-wrap
+              h2.bio-name #{data.artist.master.name}
+            p.bio-type founder
+            p.bio-type #{data.artist.master.type}
+            ul.bio-skill-list
+              each skill in data.artist.master.skills
+                li.bio-skill-lists #{skill}
+        .bio-description-wrap
+          p.bio-description 「Japan based engineer and artist, and also founder of creative team "avant_garde". As middle of engineer and artist, have created own expression and experiences in any field such as installation, live performance, xr, media art, etc. Main tools are NOTCH for visual, TouchDesigner for system and LogicProX for sound.」
