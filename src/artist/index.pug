@@ -28,11 +28,13 @@ block main
                     ul.artist-skill-list
                       each skill in item.skills
                         li.artist-skill-lists #{skill}
+
       .artist-contents-wrap
         .artist-contents.artist-contents_master
           .artist-image-wrap
-            img.artist-image(
-              src=`${data.artist.master.image}`, alt='アーティスト')
+            a.artist-image-link(href='/bio')
+              img.artist-image(
+                src=`${data.artist.master.image}`, alt='アーティスト')
           .artist-introduction
             .artist-name-wrap
               h2.artist-name #{data.artist.master.name}

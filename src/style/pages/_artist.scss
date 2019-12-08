@@ -57,6 +57,8 @@
 }
 
 .artist-image-wrap {
+  @include img-hover;
+
   width: calc(40% + 80px);
   opacity: 0.5;
   @include tb {
@@ -74,10 +76,6 @@
     &:hover {
       opacity: 0.5;
     }
-  }
-
-  &_member {
-    @include img-hover;
   }
 }
 
