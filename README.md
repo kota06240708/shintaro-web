@@ -4,40 +4,41 @@ shintaro's web site
 
 [http://w-avantgarde-b.com/](http://w-avantgarde-b.com/)
 
-
 ## Overview
 
-* build
-  * [gulp](https://gulpjs.com)
-  * [webpack](https://webpack.js.org/)
+- build
 
-* library
-  * [barba.js](https://github.com/barbajs/barba)
-  * [typed.js](https://github.com/mattboldt/typed.js/)
-  * [swiper](https://idangero.us/swiper/)
-  * [gsap](https://greensock.com/gsap)
+  - [gulp](https://gulpjs.com)
+  - [webpack](https://webpack.js.org/)
 
-* notes
-  * lint-staged + pre-commitを使っているのでgitにpushするタイミングで`yarn style:lint`が発火され、エラーだった場合commitができないのでご注意。
+- library
+
+  - [barba.js](https://github.com/barbajs/barba)
+  - [typed.js](https://github.com/mattboldt/typed.js/)
+  - [swiper](https://idangero.us/swiper/)
+  - [gsap](https://greensock.com/gsap)
+
+- notes
+  - lint-staged + pre-commit を使っているので git に push するタイミングで`yarn style:lint`が発火され、エラーだった場合 commit ができないのでご注意。
 
 ## Build Setup
 
-予めNode.jsをインストールしておいてください。
+予め Node.js をインストールしておいてください。
 
-* node.js v10.15.3
-* yarn
+- node.js v10.15.3
+- yarn
 
-**macでのインストール**
+**mac でのインストール**
 
 ```bash
 brew install yarn
 ```
 
-**windowsでのインストール**
+**windows でのインストール**
 
 [こちら](https://yarnpkg.com/ja/docs/install#windows-stable) からダウンロードしてください。
 
-**yarnがインストールできているか確認**
+**yarn がインストールできているか確認**
 
 ```bash
 yarn -v # output: 1.15.2
@@ -64,7 +65,7 @@ yarn style:lint
 
 ## Structure
 
-```sh
+```
 .
 ├── data       # 各ページのデータ
 ├── dist       # 開発ディレクトリ
@@ -72,4 +73,3 @@ yarn style:lint
 ├── src        # 実際に手を動かすディレクトリ
 └── system     # ビルド環境
 ```
-
